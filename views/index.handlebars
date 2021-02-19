@@ -3,6 +3,7 @@
 	<title>Track My Tasks</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/index.js"></script>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -10,13 +11,13 @@
 	<link href="/css/index.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload="loadDate()">
 	<div class="topnav">
 		<div>
 			<h1>Today's Tasks</h1>
 		</div>
 
-		<a href="/views/edit.handlebars" class="likeBtn" onclick="editTask()">
+		<a href="/views/edit.handlebars" class="editBtn" onclick="editTask()">
 			<button>Edit</button>
 		</a>
 
@@ -32,7 +33,23 @@
 			<i class="fa fa-bars"></i>
 		</a>
 
-		
 	</div>
+	
+	<div class="day">
+		<p id="date"></p>
+	</div>
+
+	<div class = "vertical-menu">
+		{{#each tasks}}
+			<a href="./views/task.handlebars" class="task">{{name}} {{time}}</a>				
+		{{/each}}	
+	</div>	
+
+	<div class="addTask">
+		<a href="/views/add.handlebars" class="addBtn" onclick="addTask()">
+			<button class="Btn">+ Add a Task</button>
+		</a>
+	</div>
+
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Track My Tasks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/js/jquery-1.11.0.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        <script src="/js/task.js"></script>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="/css/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="topnav">
+            <div>
+                <h1>Task Name</h1>
+            </div>
+
+            <a href="/views/index.handlebars" class="backBtn">
+                <button>Back</button>
+            </a>
+
+            <div id="myLinks">
+                <a>Tasks</a>
+                <a>Time Logs</a>
+                <a>Reports</a>
+                <a>Profile</a>
+                <a>Help and Tutorial</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+        <div class="stopwatch">
+            <div class="circle">
+                <span class="time" id="display">00:00:00</span>
+            </div>
+            <div class="controls">
+                <button class="buttonPlay">
+                    <a id="playButton">Play</a>
+
+                    <a id="pauseButton">Pause</a>
+                </button>
+
+                <button class="buttonReset">
+                    <a id="resetButton">Stop</a>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
