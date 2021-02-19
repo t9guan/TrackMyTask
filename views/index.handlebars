@@ -1,8 +1,38 @@
 <html>
 <head>
-	<title>Test Page</title>
+	<title>Track My Tasks</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/bootstrap.js"></script>
+	<script src="js/index.js"></script>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-Begin here (or replace this with any static code already written).
+	<div class="topnav">
+		<div>
+			<h1>Today's Tasks</h1>
+		</div>
+
+		<a href="/views/edit.handlebars" class="likeBtn" onclick="editTask()">
+			<button>Edit</button>
+		</a>
+
+		<div id="myLinks">
+			<a>Tasks</a>
+			<a>Time Logs</a>
+			<a>Reports</a>
+			<a>Profile</a>
+			<a>Help and Tutorial</a>
+		</div>
+
+		<a href="javascript:void(0);" class="icon" onclick="changeIcon()">
+			<i class="fa fa-bars"></i>
+		</a>
+
+		
+	</div>
 </body>
 </html>

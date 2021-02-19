@@ -1,0 +1,46 @@
+
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    left: 10;
+    top: 15;
+  }
+
+  .topnav a.likeBtn {
+    display: block;
+    position: absolute;
+    right: 10;
+    top: 15;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  h1 {
+      text-align: center;
+  }
