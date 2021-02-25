@@ -1,3 +1,4 @@
+
 function timeToString(time) {
     let diffInHrs = time / 3600000;
     let hh = Math.floor(diffInHrs);
@@ -61,7 +62,9 @@ function timeToString(time) {
     buttonToShow.style.display = "block";
     buttonToHide.style.display = "none";
   }
-  // Create event listeners
+  
+
+// Create event listeners
   
   let playButton = document.getElementById("playButton");
   let pauseButton = document.getElementById("pauseButton");

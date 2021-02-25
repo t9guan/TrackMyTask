@@ -1,5 +1,5 @@
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .topnav {
@@ -20,14 +20,14 @@ display: none;
 }
 
 .topnav a.icon {
-background: black;
+background: white;
 display: block;
 position: absolute;
 left: 10;
 top: 15;
 }
 
-.topnav a.backBtn {
+.topnav a.editBtn {
 display: block;
 position: absolute;
 right: 10;
@@ -35,37 +35,77 @@ top: 15;
 }
 
 .topnav a:hover {
-background-color: #ddd;
-color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .active {
-background-color: #4CAF50;
-color: white;
+  background-color: #4CAF50;
+  color: white;
 }
-  
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
 .stopwatch {
-    display: grid;
-    justify-items: center;
-    grid-row-gap: 23px;
-    width: 100%;
-    padding-top: 25px;
-  }
-  
-  .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    height: 270px;
-    width: 270px;
-  
-    border: 2px solid;
-    border-radius: 50%;
-  }
-  
-  .time {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 300;
-    font-size: 48px;
-  }
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 270px;
+  width: 270px;
+
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.time {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+
+  width: 187px;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+#playButton {
+  display: block;
+}
+
+#pauseButton {
+  display: none;
+}
