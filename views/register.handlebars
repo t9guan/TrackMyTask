@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>TrackMyTasks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/js/jquery-1.11.0.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        
+        <script src="/js/index.js"></script>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="/css/register.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="reg-container">
+            <h1 id="header">TrackMyTasks</h1>
+
+            <form id="register-form" action="/views/index.handlebars" method="get">
+                <div class="form">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="register-name-field" class="register-name-box" placeholder="Name"/>
+                </div>
+                <br>
+                <div class="form">
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="text" id="register-email-field" class="register-email-box" placeholder="Email"/>
+                </div>
+                <br>
+                <div class="form">
+                    <label for="pass">Password</label>
+                    <br>
+                    <input type="password" id="register-password-field" class="register-pass-box" placeholder="Password"/>
+                </div>
+
+                <div class="form">
+                    <button type="submit" class="Btn" id="reg-form-submit">Sign Up</button>
+                </div>
+
+            </form>
+
+            <p id="no-acc">Have an account? <a href="/views/login.handlebars">Sign in here!</a></p>
+
+        </div>  
+
+    </body>
+</html>
