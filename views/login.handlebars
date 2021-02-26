@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>TrackMyTasks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/js/jquery-1.11.0.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        
+        <script src="/js/index.js"></script>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="/css/login.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="header">TrackMyTasks</h1>
+
+            <form id="login-form" action="/views/index.handlebars" method="get">
+                <div class="form">
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="text" id="email-field" class="email-box" placeholder="Email"/>
+                </div>
+                <br>
+                <div class="form">
+                    <label for="pass">Password</label>
+                    <br>
+                    <input type="password" id="password-field" class="pass-box" placeholder="Password"/>
+                </div>
+
+                <a href="#" id="forgot-pass">Forgot Password?</a>
+
+                <div class="form">
+                    <button type="submit" class="Btn" id="form-submit">Sign In</button>
+                </div>
+            </form>
+
+            <p id="no-acc">Do not have an account? <a href="/views/register.handlebars">Sign up here!</a></p>
+
+        </div>  
+
+    </body>
+</html>

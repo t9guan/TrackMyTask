@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+#container {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#form-submit {
+	margin-top: 20px;
+}
+
+#forgot-pass {
+	padding-left: 133px;
+	margin-top: 10px;
+}
+
+.Btn {
+	width: 250px;
+}
+
+.pass-box{
+	width: 250px;
+	height: 30px;
+}
+
+.email-box {
+	width: 250px;
+	height: 30px;
+}
+
+p {
+	 text-align: center;
+	 margin-top: 25px;
+}

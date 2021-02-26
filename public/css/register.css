@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+#reg-container {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+}
+
+#register-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#reg-form-submit {
+	margin-top: 20px;
+}
+
+.Btn {
+	width: 250px;
+}
+
+.register-name-box {
+  width: 250px;
+  height: 30px;
+}
+
+.register-pass-box{
+	width: 250px;
+	height: 30px;
+}
+
+.register-email-box {
+	width: 250px;
+	height: 30px;
+}
+
+p {
+	 text-align: center;
+	 margin-top: 25px;
+}

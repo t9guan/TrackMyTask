@@ -1,7 +1,7 @@
 function loadDate() {
     n =  new Date();
     y = n.getFullYear();
-    m = n.getMonth() + 1;
+    m = n.getMonth();
     d = n.getDate();
     day = n.getDay();
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
