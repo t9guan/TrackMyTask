@@ -22,7 +22,7 @@
 		</a>
 
 		<div id="myLinks">
-			<a>Tasks</a>
+			<a href="/">Tasks</a>
 			<a>Time Logs</a>
 			<a>Reports</a>
 			<a>Profile</a>
@@ -41,12 +41,12 @@
 
 	<div class = "vertical-menu">
 		{{#each tasks}}
-			<a href="./views/task.handlebars" class="task">{{name}} {{time}}</a>				
+			<a href="/task/{{index}}" class="task">{{name}} {{time}}</a>				
 		{{/each}}	
 	</div>	
 
 	<div class="addTask">
-		<a href="/views/add.handlebars" class="addBtn" onclick="addTask()">
+		<a href="/add" class="addBtn">
 			<button class="Btn">+ Add a Task</button>
 		</a>
 	</div>

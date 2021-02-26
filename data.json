@@ -1,36 +1,43 @@
 {
     "tasks": [
         {
+            "index": "0",
             "name": "Breakfast",
             "time": "8:00 AM"
         },
 
         {
+            "index": "1",
             "name": "Exercise",
             "time": "10:00 AM"
         },
 
         {
+            "index": "2",
             "name": "Work",
             "time": "11:00 AM"
         },
 
         {
+            "index": "3",
             "name": "Play Xbox",
             "time": "1:00 PM"
         },
 
         {
+            "index": "4",
             "name": "Watch Youtube",
             "time": "4:00 PM"
         },
 
         {
+            "index": "5",
             "name": "Dinner",
             "time": "6:00 PM"
         },
 
         {
+            "index": "6",
             "name": "Do homework",
             "time": "8:00 PM"
         }

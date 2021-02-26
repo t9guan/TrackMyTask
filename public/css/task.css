@@ -109,3 +109,12 @@ button {
 #pauseButton {
   display: none;
 }
+
+.info a {
+  /*background-color: #eee;*/
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+}
