@@ -17,6 +17,7 @@ var log = require('./routes/log');
 var edit = require('./routes/edit');
 var help = require('./routes/help');
 var report = require('./routes/report');
+var profile = require('./routes/profile');
 // Example route
 // var user = require('./routes/user');
 
@@ -50,6 +51,7 @@ app.get('/log', log.view);
 app.get('/add/addTask', add.addTask);
 app.get('/help', help.view);
 app.get('/report', report.view);
+app.get('/profile', profile.view);
 //app.get('/views/index.handlebars', index.view);
 //app.get('/add', add.view);
 app.get('/views/index.handlebars', index.view);
