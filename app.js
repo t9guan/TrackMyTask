@@ -13,6 +13,10 @@ var task = require('./routes/task');
 var add = require('./routes/add')
 var login = require('./routes/login');
 var register = require('./routes/register');
+var log = require('./routes/log');
+var edit = require('./routes/edit');
+var help = require('./routes/help');
+var report = require('./routes/report');
 // Example route
 // var user = require('./routes/user');
 
@@ -41,6 +45,11 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/task/:index', task.view);
 app.get('/add', add.view);
+app.get('/edit', edit.view);
+app.get('/log', log.view);
+app.get('/add/addTask', add.addTask);
+app.get('/help', help.view);
+app.get('/report', report.view);
 //app.get('/views/index.handlebars', index.view);
 //app.get('/add', add.view);
 app.get('/views/index.handlebars', index.view);

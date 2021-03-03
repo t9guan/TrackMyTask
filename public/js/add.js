@@ -1,5 +1,5 @@
-let taskdata = require('../data.json');
-
+import taskdata from '../../data.json';
+let index = 7;
 function handleSubmit(event) {
     event.preventDefault();
   
@@ -9,14 +9,14 @@ function handleSubmit(event) {
     const startTime = data.get('startTime');
 
     let newTask = {
-        "index": "7",
+        "index": index,
         "name": taskName,
         "time": startTime
     }
     
     taskdata.tasks.push(newTask);
-  
-    console.log({ value });
+    index = index + 1;
+    console.log(taskdata);
   }
   
   const form = document.querySelector('form');

@@ -1,15 +1,19 @@
 <!doctype html>
 <html>
+    <head>
+        <script src="../public/js/jquery-1.11.0.js"></script>
+    </head>
+    
     <body>
         <a href="/views/index.handlebars" class="backBtn">
              <button>Back</button>
         </a>
-        <form>
+        <form id="addTaskForm" role="form" method="get" action="/add/addTask">
             <label for="taskName">Task Name:</label><br>
             <input type="text" id="taskName" name="taskName"><br>
             <label for="startTime">Start Time:</label><br>
             <input type="text" id="startTime" name="startTime">
-            <button type="submit">Submit</button>
+            <input type="submit" id="submitBtn" class="btn btn-default" value="Submit"></input>
         </form>
        
     </body>
