@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>Track My Tasks | FAQ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/index.js"></script>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/faq.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="topnav">
+		<div>
+			<h1>Help</h1>
+		</div>
+
+		<div id="myLinks">
+			<a href="/views/index.handlebars">Tasks</a>
+			<a>Time Logs</a>
+			<a>Reports</a>
+			<a>Profile</a>
+			<a href="/views/faq.handlebars">Help and Tutorial</a>
+		</div>
+
+		<a href="javascript:void(0);" class="icon" onclick="changeIcon()">
+			<i class="fa fa-bars"></i>
+		</a>
+
+	</div>
+
+        <div>
+        	<h3>About TrackMyTask</h3>
+        </div>
+
+		<button class='accordion'>What is TrackMyTask and how does it work?</button>
+
+		<div class='panel'>
+			<p>TrackMyTask is a time tracking app that helps you manage your time efficiently and improve your productivity habits.<br>In the TrackMyTask app, you can:
+				<u1>
+					<li>Add your planned and impromptu  tasks throughout the day</li>
+					<li>Track the time spent for each  individual task</li>
+					<li>Get detailed visualization reports  on how you have spent your time  for the day</li>
+				</u1>
+			</p>
+		</div>
+		<button class='accordion'>What is your privacy policy?</button>
+		<div class='panel'>
+			<p>Personal user data collected by this app, such as Account Sign Up details and/or Facebook login information, task names, profile information, and user-generated logs and reports will be kept private and confidential.
+			</p>
+		</div>
+		<div>
+        	<h3>FAQs</h3>
+        </div>
+        <button class='accordion'>How do I add a new task?</button>
+		<div class='panel'>
+			<p>To start adding tasks to your task list, go to the Tasks page and use the “+ Add a Task” button at the bottom. Input the task name, expected times to start and finish the task, and additional sub-tasks (if any). Then use the “Enter Task” button to save the task to your list.
+			</p>
+		</div>
+        <button class='accordion'>How do I delete a task?</button>
+		<div class='panel'>
+			<p>To delete a task from your task list, go to the Tasks page and use the “Edit” button at the top right side of the header. After using “Edit”, the task list will have “-” buttons appear next to the task names. Using the “-” button on a task name will remove the task from the list after deletion confirmation.
+			</p>
+		</div>
+        <button class='accordion'>How do I use the timer to self-track my tasks?</button>
+		<div class='panel'>
+			<p>To use the self-tracking timer feature, go to the Tasks page and tap on any one of the task names in the list to go to its timer. On the task’s Timer page, it will automatically input the current time for “Start”. Using the “Start” button under the timer will begin recording the time while doing a task. To pause the timer, use the “Take a Break” button to temporarily stop recording. After finishing the task, use the “Stop” button to finish logging the time. The complete time spent will be automatically generated and show up next to “Stop” time.
+			</p>
+		</div>
+        <button class='accordion'>What are Time Logs?</button>
+		<div class='panel'>
+			<p>Time Logs gives you a complete list of all logged tasks and the time you spent for each one. The Time Logs page is automatically generated and updated every time a user stops logging their time spent from a task’s timer. Using the calendar icon will let you choose a specified date to view all of your logged tasks from past days.
+			</p>
+		</div>
+        <button class='accordion'>What are Reports?</button>
+		<div class='panel'>
+			<p>Reports gives you detailed pie chart visualizations on time spent for each task completed in a day. The Reports page is automatically generated and updated every time a user stops logging their time spent from a task’s timer. Using the calendar icon will let you choose a specified date to view all of your reports from past days.
+			</p>
+		</div>
+        <button class='accordion'>How do I add tasks on a day other than today’s date?
+        </button>
+		<div class='panel'>
+			<p>To add tasks on another day instead of today’s date, go to the Tasks page and use the calendar icon to select a specific day you would like to input your tasks on.
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var acc= document.getElementsByClassName('accordion')
+		var i;
+
+		for(i=0; i<acc.length; i++){
+			acc[i].addEventListener('click', function(){
+				var panel = this.nextElementSibling;
+				if (panel.style.display === 'block'){
+					panel.style.display = 'none';}
+				else{
+					panel.style.display = 'block';}
+
+				});
+		}
+	</script>
+
+</body>
+</html>
