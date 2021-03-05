@@ -34,19 +34,32 @@ color: black;
 
 
 .vertical-menu {
-width: 500px;
+	position:relative;
+    width: 400px;
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+    border-top: 1px solid #555;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+    border-radius: 2px;
+}
+  
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    border-radius: 2px;
 }
 
-.vertical-menu a {
-background-color: #eee;
-color: black;
-display: block;
-padding: 15px;
-text-decoration: none;
-}
 
 .vertical-menu a:hover {
-background-color: #ccc;
+	background-color: #ccc;
 }
 
 
