@@ -44,7 +44,7 @@ position: relative;
 .panel{
   padding: 0 18px;
   display: none;
-  pverflow: hidden;
+  overflow: hidden;
 }
 
 .accordion::after {

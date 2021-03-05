@@ -3,43 +3,57 @@
         {
             "index": "0",
             "name": "Breakfast",
-            "time": "8:00 AM"
+            "time": "8:00 AM",
+            "endtime": "-----",
+            "timetaken": "-----"
         },
 
         {
             "index": "1",
             "name": "Exercise",
-            "time": "10:00 AM"
+            "time": "10:00 AM",
+            "endtime": "-----",
+            "timetaken": "-----"
         },
 
         {
             "index": "2",
             "name": "Work",
-            "time": "11:00 AM"
+            "time": "11:00 AM",
+            "endtime": "-----",
+            "timetaken": "-----"
         },
 
         {
             "index": "3",
             "name": "Play Xbox",
-            "time": "1:00 PM"
+            "time": "1:00 PM",
+            "endtime": "-----",
+            "timetaken": "-----"
         },
 
         {
             "index": "4",
             "name": "Watch Youtube",
-            "time": "4:00 PM"
+            "time": "4:00 PM",
+            "endtime": "-----",
+            "timetaken": "-----"
         },
 
         {
             "index": "5",
             "name": "Dinner",
-            "time": "6:00 PM"
+            "time": "6:00 PM",
+            "endtime": "-----",
+            "timetaken": "-----"
         },
 
         {
             "index": "6",
             "name": "Do homework",
-            "time": "8:00 PM"
+            "time": "8:00 PM",
+            "endtime": "-----",
+            "timetaken": "-----"
         }
     ]    
 }

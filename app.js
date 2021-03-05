@@ -16,11 +16,8 @@ var register = require('./routes/register');
 var faq = require('./routes/faq');
 var log = require('./routes/log');
 var edit = require('./routes/edit');
-var help = require('./routes/help');
 var report = require('./routes/report');
 var profile = require('./routes/profile');
-// Example route
-// var user = require('./routes/user');
 
 var app = express();
 
@@ -50,17 +47,14 @@ app.get('/add', add.view);
 app.get('/edit', edit.view);
 app.get('/log', log.view);
 app.get('/add/addTask', add.addTask);
-app.get('/help', help.view);
 app.get('/report', report.view);
 app.get('/profile', profile.view);
-//app.get('/views/index.handlebars', index.view);
-//app.get('/add', add.view);
 app.get('/views/index.handlebars', index.view);
 app.get('/views/login.handlebars', login.view);
 app.get('/views/register.handlebars', register.view);
 app.get('/views/faq.handlebars', faq.view);
-// Example route
-// app.get('/users', user.list);
+app.get('/task/:id/:endTime/:timeTaken', task.id);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -24,6 +24,7 @@ function timeToString(time) {
   let startTime;
   let elapsedTime = 0;
   let timerInterval;
+  let time;
   
   // Create function to modify innerHTML
   
@@ -48,10 +49,13 @@ function timeToString(time) {
   }
   
   function reset() {
+    time = elapsedTime;
     clearInterval(timerInterval);
     print("00:00:00");
     elapsedTime = 0;
     showButton("PLAY");
+    var d = new Date();
+    $.get('/task/' + $('.info').attr('id') + '/' + d.toLocaleTimeString() + '/' + timeToString(time));
   }
   
   // Create function to display buttons

@@ -11,7 +11,9 @@ function handleSubmit(event) {
     let newTask = {
         "index": index,
         "name": taskName,
-        "time": startTime
+        "time": startTime,
+        "endtime": "-----",
+        "timetaken": "-----"
     }
     
     taskdata.tasks.push(newTask);

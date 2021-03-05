@@ -24,8 +24,8 @@
 
             <div id="myLinks">
                 <a href="/views/index.handlebars">Tasks</a>
-                <a>Time Logs</a>
-                <a>Reports</a>
+                <a href="/log">Time Logs</a>
+                <a href="/report">Reports</a>
                 <a>Profile</a>
                 <a href="/views/faq.handlebars">Help and Tutorial</a>
             </div>
@@ -36,10 +36,10 @@
 
         </div>	
 
-        <div class="info">
-            <a>Start {{time}}</a>
-            <a>Stop -----</a>
-            <a>Time Taken -----</a>
+        <div class="info" id={{index}}>
+            <a>Start Time {{time}}</a>
+            <a id="endtime">End Time {{endtime}}</a>
+            <a id="timetaken">Time Taken {{timetaken}}</a>
         </div>
 
         <div class="stopwatch">
@@ -50,13 +50,13 @@
 
             <div class="controls">
                 <button class="buttonPlay">
-                <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+                <a id="playButton" >Start</a>
 
-                <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+                <a id="pauseButton" >Pause</a>
                 </button>
 
                 <button class="buttonReset">
-                <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+                <a id="resetButton">Stop</a>
                 </button>
             </div>
         </div>

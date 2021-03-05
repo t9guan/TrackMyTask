@@ -9,7 +9,9 @@ exports.addTask = function(request, response){
     let newTask = {
         "index": index,
         "name": request.query.taskName,
-        "time": request.query.startTime
+        "time": request.query.startTime,
+        "endtime": "-----",
+        "timetaken": "-----"
     }
     
     data.tasks.push(newTask);

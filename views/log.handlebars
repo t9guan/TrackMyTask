@@ -1,6 +1,54 @@
 <!doctype html>
 <html>
-    <body>
-        <p>Logs</p>
-    </body>
+<head>
+	<title>Track My Tasks</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/index.js"></script>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="loadDate()">
+	<div class="topnav">
+		<div>
+			<h1>Today's Tasks</h1>
+		</div>
+
+		<a href="/views/index.handlebars" class="backBtn">
+                <button>Back</button>
+        </a>
+
+        <a href="javascript:void(0);" class="icon" onclick="changeIcon()">
+			<i class="fa fa-bars"></i>
+		</a>
+        
+		<div id="myLinks">
+			<a href="/views/index.handlebars">Tasks</a>
+			<a href="/log">Time Logs</a>
+			<a href="/report">Reports</a>
+			<a>Profile</a>
+			<a href="/views/faq.handlebars">Help and Tutorial</a>
+		</div>
+
+		
+
+	</div>
+	
+	<div class="day">
+		<p id="date"></p>
+	</div>
+
+	<div class = "vertical-menu">
+		{{#each tasks}}
+			<a href="/task/{{index}}" class="task">{{name}} <br>
+            Start Time: {{time}} <br>
+            End Time: {{timetaken}}</a>				
+		{{/each}}	
+	</div>	
+
+</body>
 </html>
