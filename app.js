@@ -54,6 +54,7 @@ app.get('/views/login.handlebars', login.view);
 app.get('/views/register.handlebars', register.view);
 app.get('/views/faq.handlebars', faq.view);
 app.get('/task/:id/:endTime/:timeTaken', task.id);
+app.get('/report/chart', report.chart);
 
 
 http.createServer(app).listen(app.get('port'), function(){
