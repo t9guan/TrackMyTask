@@ -3,6 +3,11 @@ h1 {
   padding-bottom: 50px;
 }
 
+.img {
+  max-width: 260px;
+  
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -10,7 +15,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-
+  background: linear-gradient(to top, #6A9EEA, #f1faee);
 }
 
 #reg-container {
@@ -36,24 +41,64 @@ body {
 
 .Btn {
 	width: 250px;
+  padding: 10px;
+  border: 1;
+  border-color: #C4D5ED;
+  border-radius: 20px;
+  background-color: #3170C8;
+  color: white;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+label[for=name] {
+  margin-left: 18px;
+}
+
+label[for=email] {
+  margin-left: 18px;
+}
+
+label[for=pass] {
+  margin-left: 15px;
 }
 
 .register-name-box {
   width: 250px;
   height: 30px;
+  padding: 20px;
+  margin: 5px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 .register-pass-box{
 	width: 250px;
-	height: 30px;
+  height: 30px;
+  padding: 20px;
+  margin: 5px;
+  margin-bottom: 15px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 .register-email-box {
 	width: 250px;
-	height: 30px;
+  height: 30px;
+  padding: 20px;
+  margin: 5px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 p {
 	 text-align: center;
 	 margin-top: 25px;
+   color: black;
+}
+
+#signin {
+  color: white;
 }

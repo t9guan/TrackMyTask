@@ -3,6 +3,11 @@ h1 {
   padding-bottom: 50px;
 }
 
+.img {
+  max-width: 260px;
+  
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -10,7 +15,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-
+  background: linear-gradient(to top, #6A9EEA, #f1faee);
 }
 
 #container {
@@ -30,30 +35,65 @@ body {
   align-items: center;
 }
 
-#form-submit {
-	margin-top: 20px;
-}
-
 #forgot-pass {
 	padding-left: 133px;
 	margin-top: 10px;
 }
 
+#form-submit {
+  margin-top: 20px;
+
+}
+
 .Btn {
 	width: 250px;
+  padding: 10px;
+  border: 1;
+  border-color: #C4D5ED;
+  border-radius: 20px;
+  background-color: #3170C8;
+  color: white;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
 .pass-box{
 	width: 250px;
 	height: 30px;
+  padding: 20px;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+label[for=email] {
+  margin-left: 18px;
+}
+
+label[for=pass] {
+  margin-left: 15px;
 }
 
 .email-box {
 	width: 250px;
 	height: 30px;
+  padding: 20px;
+  margin: 5px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 p {
 	 text-align: center;
 	 margin-top: 25px;
+   color: black;
+}
+
+#forgot-pass {
+  color: white;
+}
+
+#signup {
+  color: white;
 }

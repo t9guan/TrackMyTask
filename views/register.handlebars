@@ -14,23 +14,28 @@
     </head>
     <body>
         <div class="reg-container">
-            <h1 id="header">TrackMyTasks</h1>
+            <!-- <h1 id="header">TrackMyTasks</h1> -->
+
+            <div class="logo" id="applogo">
+                <center><img src="../../images/logo.png" alt="TrackMyTasks" class="img"></center>
+            </div>
+            <br><br>
 
             <form id="register-form" action="/views/index.handlebars" method="get">
                 <div class="form">
-                    <label for="name">Name</label>
+                    <label for="name"><i style="font-size:19px" class="fa">&#xf007;</i>   Name</label>
                     <br>
                     <input type="text" id="register-name-field" class="register-name-box" placeholder="Name"/>
                 </div>
                 <br>
                 <div class="form">
-                    <label for="email">Email Address</label>
+                    <label for="email"><i style="font-size:15px" class="fa">&#xf0e0;</i>   Email Address</label>
                     <br>
                     <input type="text" id="register-email-field" class="register-email-box" placeholder="Email"/>
                 </div>
                 <br>
                 <div class="form">
-                    <label for="pass">Password</label>
+                    <label for="pass"><i style="font-size:20px" class="fa">&#xf023;</i>   Password</label>
                     <br>
                     <input type="password" id="register-password-field" class="register-pass-box" placeholder="Password"/>
                 </div>
@@ -41,7 +46,7 @@
 
             </form>
 
-            <p id="no-acc">Have an account? <a href="/views/login.handlebars">Sign in here!</a></p>
+            <p id="no-acc">Have an account? <a href="/views/login.handlebars" id="signin">Sign in here!</a></p>
 
         </div>  
 

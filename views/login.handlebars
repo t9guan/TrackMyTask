@@ -14,17 +14,22 @@
     </head>
     <body>
         <div class="container">
-            <h1 id="header">TrackMyTasks</h1>
+            <!-- <h1 id="header">TrackMyTasks</h1> -->
+
+            <div class="logo" id="applogo">
+                <center><img src="../../images/logo.png" alt="TrackMyTasks" class="img"></center>
+            </div>
+            <br><br>
 
             <form id="login-form" action="/views/index.handlebars" method="get">
                 <div class="form">
-                    <label for="email">Email Address</label>
+                    <label for="email"><i style="font-size:15px" class="fa">&#xf0e0;</i>   Email Address</label>
                     <br>
                     <input type="text" id="email-field" class="email-box" placeholder="Email"/>
                 </div>
                 <br>
                 <div class="form">
-                    <label for="pass">Password</label>
+                    <label for="pass"><i style="font-size:20px" class="fa">&#xf023;</i>   Password</label>
                     <br>
                     <input type="password" id="password-field" class="pass-box" placeholder="Password"/>
                 </div>
@@ -36,7 +41,7 @@
                 </div>
             </form>
 
-            <p id="no-acc">Do not have an account? <a href="/views/register.handlebars">Sign up here!</a></p>
+            <p id="no-acc">Do not have an account? <a href="/views/register.handlebars" id="signup">Sign up here!</a></p>
 
         </div>  
 
