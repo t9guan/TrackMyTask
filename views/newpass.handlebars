@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>TrackMyTasks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/js/jquery-1.11.0.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        
+        <script src="/js/newpass.js"></script>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="/css/newpass.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="logo" id="applogo">
+                <center><img src="../../images/logo.png" alt="TrackMyTasks" class="img"></center>
+            </div>
+            <br><br>
+
+            <h4 id="header">Forgot your Password?</h4>
+
+            <form id="resetpass-form" action="/views/login.handlebars" method="get">
+                <div class="form">
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="text" id="email-field" class="email-box" placeholder="Email"/>
+                </div>
+                <br>
+                <div class="form">
+                    <label for="newpass"> New Password</label>
+                    <br>
+                    <input type="password" id="newpass-field" class="newpass-box" placeholder="New Password"/>
+                    <span class="eye" onclick="toggle()">
+                        <i class="fa fa-eye" id="toggleNewPass"></i>
+                        <i class="fa fa-eye-slash" id="toggleOffNewPass"></i>
+                    </span>
+
+                </div>
+
+                <br>
+                <div class="form">
+                    <label for="confirmpass"> Confirm Password</label>
+                    <br>
+                    <input type="password" id="confirmpass-field" class="confirmpass-box" placeholder="Confirm Password"/>
+                        <span class="eye2" onclick="toggle2()">
+                        <i class="fa fa-eye" id="toggleConfirmPass"></i>
+                        <i class="fa fa-eye-slash" id="toggleOffConfirmPass"></i>
+                    </span>
+                </div>
+
+                <br>
+
+                <div class="form">
+                    <button type="submit" class="Btn" id="pass-reset">Reset Password</button>
+                </div>
+            </form>
+
+            <a href="/views/login.handlebars" id="login">Back to Login</a>
+
+        </div>  
+
+    </body>
+</html>

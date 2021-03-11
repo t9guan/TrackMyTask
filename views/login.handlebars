@@ -14,12 +14,13 @@
     </head>
     <body>
         <div class="container">
-            <!-- <h1 id="header">TrackMyTasks</h1> -->
 
             <div class="logo" id="applogo">
                 <center><img src="../../images/logo.png" alt="TrackMyTasks" class="img"></center>
             </div>
             <br><br>
+
+            <h4 id="header">Login to your Account</h4>
 
             <form id="login-form" action="/views/index.handlebars" method="get">
                 <div class="form">
@@ -34,7 +35,7 @@
                     <input type="password" id="password-field" class="pass-box" placeholder="Password"/>
                 </div>
 
-                <a href="#" id="forgot-pass">Forgot Password?</a>
+                <a href="/views/newpass.handlebars" id="forgot-pass">Forgot Password?</a>
 
                 <div class="form">
                     <button type="submit" class="Btn" id="form-submit">Sign In</button>

@@ -1,3 +1,17 @@
+.form i {
+	margin-left: -30px;
+	cursor: pointer;
+}
+
+.eye, .eye2 {
+	position: absolute;
+	margin-top: 17px;
+}
+
+#toggleNewPass, #toggleConfirmPass {
+	display: none;
+}
+
 h4 {
   text-align: center;
   padding-bottom: 15px;
@@ -28,25 +42,20 @@ body {
   border-radius: 7px;
 }
 
-#login-form {
+#resetpass-form {
   align-self: flex-start;
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
-#forgot-pass {
-	padding-left: 133px;
-	margin-top: 10px;
-}
-
-#form-submit {
+#pass-reset {
   margin-top: 20px;
 
 }
 
 .Btn {
-	width: 250px;
+  width: 250px;
   padding: 10px;
   border: 1;
   border-color: #C4D5ED;
@@ -64,11 +73,32 @@ body {
   transform: translateY(3px);
 }
 
-.pass-box{
-	width: 250px;
-	height: 30px;
+.email-box {
+  width: 250px;
+  height: 30px;
   padding: 20px;
-  margin-top: 5px;
+  margin: 5px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.newpass-box{
+  width: 250px;
+  height: 30px;
+  padding: 20px;
+  margin: 5px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.confirmpass-box{
+  width: 250px;
+  height: 30px;
+  padding: 20px;
+  margin: 5px;
+  margin-bottom: 15px;
   border: 0;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
@@ -78,19 +108,15 @@ label[for=email] {
   margin-left: 18px;
 }
 
-label[for=pass] {
-  margin-left: 15px;
+label[for=newpass] {
+  margin-left: 16px;
 }
 
-.email-box {
-	width: 250px;
-	height: 30px;
-  padding: 20px;
-  margin: 5px;
-  border: 0;
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+label[for=confirmpass] {
+  margin-left: 16px;
 }
+
+
 
 input[type=text], input[type=password] {
   border: none;
@@ -103,16 +129,9 @@ input[type="text"]:focus, input[type="password"]:focus {
   box-shadow: 0px 0px 0px 2px #3170C8;
 }
 
-p {
-	 text-align: center;
-	 margin-top: 25px;
-   color: black;
-}
-
-#forgot-pass {
-  color: white;
-}
-
-#signup {
+#login {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
   color: white;
 }

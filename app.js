@@ -13,6 +13,7 @@ var task = require('./routes/task');
 var add = require('./routes/add')
 var login = require('./routes/login');
 var register = require('./routes/register');
+var newpass = require('./routes/newpass');
 var faq = require('./routes/faq');
 var log = require('./routes/log');
 var edit = require('./routes/edit');
@@ -52,6 +53,7 @@ app.get('/profile', profile.view);
 app.get('/views/index.handlebars', index.view);
 app.get('/views/login.handlebars', login.view);
 app.get('/views/register.handlebars', register.view);
+app.get('/views/newpass.handlebars', newpass.view);
 app.get('/views/faq.handlebars', faq.view);
 app.get('/task/:id/:endTime/:timeTaken', task.id);
 app.get('/report/chart', report.chart);
