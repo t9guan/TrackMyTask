@@ -7,4 +7,5 @@ exports.getSize = function(request, response){
 exports.deleteTask = function(request, response){
     delete(data.tasks[request.params.id]);
     response.render('index', data);
+    console.log(data);
 }

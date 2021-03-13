@@ -29,11 +29,14 @@ function toggleBtn(data){
     var i;
     for(i = 0; i < datasize; i++){
         var x = document.getElementById(i+"button");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+        if(x != null){
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
+       
     }
 }
 
@@ -41,6 +44,7 @@ function deleteTask(e, index){
     e.preventDefault();
     if(confirm("Are you sure you would like to delete this task?")){
         $.get("/edit/" + index);
+        document.getElementById(index).remove();
     }else{
         console.log("not delete task");
     }
