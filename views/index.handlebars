@@ -46,7 +46,7 @@
 
 		{{#each tasks}}
 			<a href="/task/{{index}}" id="{{index}}" class="task">{{name}} {{time}}
-				<button id="{{index}}button" class="buttonimg" onclick="deleteTask(event)">Delete Task</button>
+				<button id="{{index}}button" class="buttonimg" onclick="deleteTask(event, {{index}})">Delete Task</button>
 			</a>					
 		{{/each}}
 

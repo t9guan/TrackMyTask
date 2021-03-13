@@ -45,7 +45,8 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/task/:index', task.view);
 app.get('/add', add.view);
-app.get('/edit', edit.view);
+app.get('/edit', edit.getSize);
+app.get('/edit/:id', edit.deleteTask);
 app.get('/log', log.view);
 app.get('/add/addTask', add.addTask);
 app.get('/report', report.view);

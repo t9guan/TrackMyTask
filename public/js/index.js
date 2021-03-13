@@ -29,18 +29,18 @@ function toggleBtn(data){
     var i;
     for(i = 0; i < datasize; i++){
         var x = document.getElementById(i+"button");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
     }
 }
 
-function deleteTask(e){
+function deleteTask(e, index){
     e.preventDefault();
     if(confirm("Are you sure you would like to delete this task?")){
-        console.log("delete task");
+        $.get("/edit/" + index);
     }else{
         console.log("not delete task");
     }
