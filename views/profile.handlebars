@@ -6,6 +6,8 @@
         <script src="/js/jquery-1.11.0.js"></script>
         <script src="/js/bootstrap.js"></script>
         <script src="/js/index.js"></script>
+        {{> facebook}}
+        <script src="/js/facebook.js"></script>
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
         <link href="/css/style.css" rel="stylesheet">
@@ -36,6 +38,11 @@
                 <button id = 'back'>Back</button>
             </a>
         </div>
+
+        <div class=profileInfo> 
+            <h3>Hi</h3> <h3 id="profileName">user</h3> <h3>!</h3>
+        </div>
+
         <div>
             <a href="/views/newpass.handlebars" id="forgot-pass">
                 <button class='setting' id='reset'>Reset Password</button>
