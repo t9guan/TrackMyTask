@@ -25,6 +25,16 @@ function editTask() {
 
 function toggleBtn(data){
     console.log(data.size);
+    let datasize = data.size;
+    var i;
+    for(i = 0; i < datasize; i++){
+        var x = document.getElementById(i+"button");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
 }
 
 function deleteTask(e){

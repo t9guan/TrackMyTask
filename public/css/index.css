@@ -78,7 +78,7 @@
   }
 
   .buttonimg {
-    display: block;
+    display: none;
     position: absolute;
     
     width: auto;
