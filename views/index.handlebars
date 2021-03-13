@@ -44,8 +44,9 @@
 	<div class = "vertical-menu">
 
 		{{#each tasks}}
-			<a href="/task/{{index}}" id="{{index}}" class="task">{{name}} {{time}}</a>
-			<button id="deletebtn" class="buttonimg" onclick="deleteTask(event)">Delete Task</button>					
+			<a href="/task/{{index}}" id="{{index}}" class="task">{{name}} {{time}}
+				<button id="{{index}}" class="buttonimg" onclick="deleteTask(event)">Delete Task</button>
+			</a>					
 		{{/each}}
 
 		<div class="addTask">

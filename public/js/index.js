@@ -20,12 +20,11 @@ function changeIcon() {
 }
 
 function editTask() {
-    var x = document.getElementById("deletebtn");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+    $.get("/edit", toggleBtn);
+}
+
+function toggleBtn(data){
+    console.log(data.size);
 }
 
 function deleteTask(e){
