@@ -46,9 +46,11 @@
 
 	<div class = "vertical-menu">
 		{{#each tasks}}
-			<a href="/task/{{index}}" class="task">{{name}} <br>
-            Start Time: {{time}} <br>
-            End Time: {{timetaken}}</a>				
+			{{#if name}}
+				<a href="/task/{{index}}" class="task">{{name}} <br>
+				Start Time: {{time}} <br>
+				Time Taken: {{timetaken}}</a>		
+			{{/if}}		
 		{{/each}}	
 	</div>	
 

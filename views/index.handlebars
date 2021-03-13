@@ -42,12 +42,14 @@
 		<p id="date"></p>
 	</div>
 
-	<div class = "vertical-menu">
+	<div class = "vertical-menu" onload="checkNull()">
 
 		{{#each tasks}}
-			<a href="/task/{{index}}" id="{{index}}" class="task">{{name}} {{time}}
-				<button id="{{index}}button" class="buttonimg" onclick="deleteTask(event, {{index}})">Delete Task</button>
-			</a>					
+			{{#if name}}
+				<a href="/task/{{index}}" id="{{index}}" class="task">{{name}} {{time}}
+					<button id="{{index}}button" class="buttonimg" onclick="deleteTask(event, {{index}})">Delete Task</button>
+				</a>			
+			{{/if}}		
 		{{/each}}
 
 		<div class="addTask">
