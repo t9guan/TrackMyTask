@@ -8,7 +8,8 @@
 	<script src="/js/index.js"></script>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/index.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/log.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body onload="loadDate()">
@@ -16,10 +17,6 @@
 		<div>
 			<h1>Today's Tasks</h1>
 		</div>
-
-		<a href="/views/index.handlebars" class="backBtn">
-                <button>Back</button>
-        </a>
 
         <a href="javascript:void(0);" class="icon" onclick="changeIcon()">
 			<i class="fa fa-bars"></i>
@@ -36,6 +33,12 @@
 		
 
 	</div>
+
+    <div class='goBack'>
+        <a href="/views/index.handlebars" class="backBtn">
+            <button id = 'back'>Back</button>
+        </a>
+    </div>
 	
 	<div class="day">
 		<p id="date"></p>

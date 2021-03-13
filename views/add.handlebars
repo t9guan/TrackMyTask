@@ -9,7 +9,8 @@
         <script src="/js/index.js"></script>
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="/css/task.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/add.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
@@ -18,10 +19,6 @@
             <div>
                 <h1>Add Task</h1>
             </div>
-
-            <a href="/views/index.handlebars" class="backBtn">
-                <button>Back</button>
-            </a>
 
             <div id="myLinks">
                 <a href="/views/index.handlebars">Tasks</a>
@@ -37,6 +34,12 @@
 
         </div>	
         
+        <div class='goBack'>
+            <a href="/views/index.handlebars" class="backBtn">
+                <button id = 'back'>Back</button>
+            </a>
+        </div>
+
         <form id="addTaskForm" role="form" method="get" action="/add/addTask">
             <label for="taskName">Task Name:</label><br>
             <input type="text" id="taskName" name="taskName"><br>
