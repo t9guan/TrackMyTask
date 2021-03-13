@@ -17,7 +17,7 @@
 			<h1>Today's Tasks</h1>
 		</div>
 
-		<a href="/edit" class="editBtn" onclick="editTask()">
+		<a class="editBtn" onclick="editTask()">
 			<button>Edit</button>
 		</a>
 		
@@ -29,7 +29,7 @@
 			<a href="/views/index.handlebars">Tasks</a>
 			<a href="/log">Time Logs</a>
 			<a href="/report">Reports</a>
-			<a>Profile</a>
+			<a href="/profile">Profile</a>
 			<a href="/views/faq.handlebars">Help and Tutorial</a>
 		</div>
 
@@ -42,9 +42,12 @@
 	</div>
 
 	<div class = "vertical-menu">
+
 		{{#each tasks}}
-			<a href="/task/{{index}}" class="task">{{name}} {{time}}</a>				
+			<a href="/task/{{index}}" id="{{index}}" class="task">{{name}} {{time}}</a>
+			<button id="deletebtn" class="buttonimg" onclick="deleteTask(event)">Delete Task</button>					
 		{{/each}}
+
 		<div class="addTask">
 		<a href="/add" class="addBtn">
 			<button class="Btn">+ Add a Task</button>

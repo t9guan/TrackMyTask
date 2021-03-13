@@ -96,4 +96,10 @@
     border-radius: 2px;
   }
 
-  
+  .buttonimg {
+    display: block;
+    position: absolute;
+    
+    width: auto;
+    height: auto;
+  }

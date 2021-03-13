@@ -18,3 +18,21 @@ function changeIcon() {
         x.style.display = "block";
     }
 }
+
+function editTask() {
+    var x = document.getElementById("deletebtn");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+function deleteTask(e){
+    e.preventDefault();
+    if(confirm("Are you sure you would like to delete this task?")){
+        console.log("delete task");
+    }else{
+        console.log("not delete task");
+    }
+}

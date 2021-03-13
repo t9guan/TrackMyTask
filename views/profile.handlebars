@@ -1,5 +1,48 @@
 <html>
+    <head>
+        <title>Track My Tasks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/js/jquery-1.11.0.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        <script src="/js/index.js"></script>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="/css/task.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
     <body>
-        <p>Profile</p>
+        <div class="topnav">
+            <div>
+                <h1>Profile</h1>
+            </div>
+
+            <a href="/views/index.handlebars" class="backBtn">
+                <button>Back</button>
+            </a>
+
+            <div id="myLinks">
+                <a href="/views/index.handlebars">Tasks</a>
+                <a href="/log">Time Logs</a>
+                <a href="/report">Reports</a>
+                <a href="/profile">Profile</a>
+                <a href="/views/faq.handlebars">Help and Tutorial</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="changeIcon()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>	
+
+        <div>
+            <a href="/views/newpass.handlebars" id="forgot-pass">
+                <button>Reset Password</button>
+            </a>
+            <br>
+            <a href="/">
+                <button>Sign Out</button>
+            </a>
+        </div>
     </body>
 </html>
