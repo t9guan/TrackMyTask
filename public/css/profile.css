@@ -1,0 +1,36 @@
+.setting {
+  width: 250px;
+  padding: 10px;
+  border-color: #C4D5ED;
+  border-radius: 20px;
+  background-color: #3170C8;
+  color: white;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+
+}
+.setting:focus {
+  outline: none;
+}
+
+.setting:active {
+  transform: translateY(3px);
+}
+
+#reset{
+	margin: 0;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 28%;
+}
+
+#signout{
+	margin: 0;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 8%;
+}
+
+
+
+
+
