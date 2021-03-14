@@ -18,3 +18,8 @@ https://medium.com/swlh/how-to-create-your-first-login-page-with-html-css-and-ja
 Implementing Toggle Password On/Off Visibility for "Forgot Password?" link:
 
 https://www.youtube.com/watch?v=NomcZddqBfs
+
+To make accordion faq feature:
+
+https://www.youtube.com/watch?v=XfLMhmlGvEs&t=1131s
+
