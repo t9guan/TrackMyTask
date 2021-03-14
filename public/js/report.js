@@ -16,5 +16,8 @@ function drawChart(){
     console.log(chartdata);
     var data = google.visualization.arrayToDataTable(chartdata);
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data);
+    var options = {
+        backgroundColor: 'transparent'
+    };
+    chart.draw(data, options);
 }
