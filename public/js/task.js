@@ -55,6 +55,8 @@ function timeToString(time) {
     elapsedTime = 0;
     showButton("PLAY");
     var d = new Date();
+    $('#endtime').text('End Time ' + d.toLocaleTimeString());
+    $('#timetaken').text('Time Taken ' + timeToString(time));
     $.get('/task/' + $('.info').attr('id') + '/' + d.toLocaleTimeString() + '/' + timeToString(time));
   }
   

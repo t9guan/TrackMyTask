@@ -1,3 +1,4 @@
+let chartdata
 $(document).ready(function() {
 	initializePage();
 })
@@ -7,18 +8,13 @@ function initializePage(){
 function serverResponse(data){
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);
+    chartdata = data;
     console.log(data);
-    
-
-function drawChart() {
-    var i;
-    let chartData = [];
-    for (i = 0; i<data.tasks.length; i++){
-        chartData.push({x: data.tasks[i].name, value: data.tasks[i].timetaken});
-    }
-
-    var thing = google.visualization.arrayToDataTable(chartData);
-    var chart = new google.visualization.PieChart(document.getElementById('chartContainer'));
-  chart.draw(chartData);
 }
+
+function drawChart(){
+    console.log(chartdata);
+    var data = google.visualization.arrayToDataTable(chartdata);
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data);
 }
