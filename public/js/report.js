@@ -17,7 +17,17 @@ function drawChart(){
     var data = google.visualization.arrayToDataTable(chartdata);
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
     var options = {
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        legend: {position: 'bottom'},
+        width: 400,
+        height: 400,
+        fontSize: 14,
+        chartArea:{
+            height:200,
+            width:200,
+            left:88,
+            top: 50,
+        }
     };
     chart.draw(data, options);
 }
