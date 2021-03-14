@@ -71,10 +71,16 @@ button {
 
 #playButton {
   display: block;
+  color: white;
 }
 
 #pauseButton {
   display: none;
+  color: white;
+}
+
+#resetButton {
+  color: white;
 }
 
 .info a {

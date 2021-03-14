@@ -1,3 +1,11 @@
+  h2 {
+    text-align: center;
+  }
+
+.day {
+    text-align: center;
+}
+
   .topnav a.editBtn {
     display: block;
     position: absolute;
